@@ -1,0 +1,218 @@
+
+[settings]
+; 1033 = 0x0409
+CodePage=1033
+Language=English
+FontFace=ËÎÌו
+FontHeight=9
+
+[strings]
+
+;==============================================================
+; Common strings
+;==============================================================
+wxID_OK=OK
+wxID_CANCEL=Cancel
+
+
+133=EnterSafe PKI Manager(User)
+134=EnterSafe PKI Manager(Admin)
+
+801=Token is blocked by user PIN.
+802=The PIN is too long
+803=Wrong PIN!\n\n The token is blocked.
+804=Wrong PIN\n\nThis is the LAST PIN attempt, if the PIN is still wrong, the token will be blocked.
+805=Wrong PIN.
+814=Change user PIN successfully!
+821=Invalid token name!
+822=Change token name failed!
+823=Change token name successfully!
+833=Change SO PIN failed!
+834=Change SO PIN successfully!
+835=Token is blocked by SO PIN!
+836=SO PIN is too long!
+837=Wrong SO PIN\n\nYour token is blocked by SO PIN!
+838=Wrong SO PIN\n\n This is the LAST SO PIN attempt, if the PIN is still wrong, the token will be blocked.
+839=Wrong SO PIN!
+843=Unblock token failed!
+844=Unblock token successfully!
+854=Initialize token failed!
+855=Initialize token successfully!
+871=Export certificate successfully!
+872=Create file failed!
+873=Select a path to export your certificate
+874=Select your certificate file
+1260=Data cannot be recovered, are you sure to delete it?
+1261=Delete data successfully!
+1262=Delete data failed!
+
+5015=Unknown error!
+5020=Token is removed!
+5025=Wrong password!
+5026=No enough space!
+5027=File not found!
+5030=Not supported certificate!
+5031=Only support %d-%d RSA key pair!
+5032=Not supported certificate!
+5033=The certificate already exists, continue?
+5034=Invalid session handle due to other operation.
+
+10100=Description
+10101=Card Status
+10102=Manufacturer
+10103=Token is inserted and ready to use
+10104=Token is inserted but cannot be recognized
+10105=<Card not found>
+10106=<Card not recognized>
+10107=Slot list
+10108=Data management
+10109=Flags
+10110=Hardware Version
+10111=Firmware Version
+10112=Token Name
+10113=Model
+10114=Serial number
+10115=Max session number
+10117=Max R/W session number
+10119=Max PIN Length
+10120=Min PIN Length
+10121=Public space
+10122=Free public space
+10123=Private space
+10124=Free private space
+10125=Hardware Version
+10126=Firmware Version
+10127=Token Timer
+10128=<No built-in timer>
+10129=Card not recognized
+
+;Get slot error!
+
+;DataMgrPanel
+wxID_CERT_STATIC=Your Certificates:
+ID_BUTTON_IMPORT=Import
+ID_BUTTON_EXPORT=Export
+ID_BUTTON_VIEW=View
+ID_BUTTON_DELETE=Delete
+
+;Dlg_About
+ID_DIALOG_ABOUT=About EnterSafe PKI Manager
+wxID_ABOUT_V_STATIC=EnterSafe PKI Manager V1.0
+wxID_ABOUT_P_STATIC=Developer:EnterSafe
+wxID__ABOUT_C_STATIC=Copyright (C) 2012 EnterSafe
+
+;Dlg_ChangeSOPin
+ID_DIALOG_CHANGESOPIN=Change Secure Officer PIN
+wxID_CHSP_SP_STATIC=Please input SO PIN:
+wxID_CHSP_NEW_STATIC=Input new SO PIN(%d to %d characters):
+wxID_CHSP_RE_STATIC=Confirm new SO PIN:
+
+;Dlg_ChangeTokenName
+ID_DIALOG_CHANGETOKENNAME=Change Token Name
+wxID_CHTN_CTN_STATIC=Current token name:
+wxID_STATIC_TOKENNAME=ePass 2000
+wxID_CHTN_NEW_STATIC=Set new token name(Max to 32 characters):
+
+;Dlg_ChangeUserPin
+ID_DIALOG_CHANGEUSERPIN=Change User PIN
+wxID_CHUP_UP_STATIC=Please input user PIN:
+wxID_CHUP_NEW_STATIC=Input new user PIN(%d to %d characters):
+wxID_CHUP_RE_STATIC=Confirm new user PIN:
+
+;Dlg_ExportCert
+ID_DIALOG_EXPORTCERT=Export Certificate
+wxID_EXC_PATH_STATIC=Certificate path:
+
+;Dlg_ImportCert
+ID_DIALOG_IMPORTCERT=Import Certificate
+wxID_IMC_PATH_STATIC=Certificate path:
+wxID_STATIC_PASSWORD=Certificate password:
+
+;Dlg_InitToken
+ID_DIALOG_INITTOKEN=Initialize Token
+wxID_INIT_SP_STATIC=Please input SO PIN:
+wxID_INIT_NEW_UP_STATIC=Input new user PIN(%d to %d characters):
+wxID_INIT_RE_UP_STATIC=Confirm new user PIN:
+wxID_INIT_TN_STATIC=Set token name(Max to 32 characters):
+
+;Dlg_Login
+ID_DIALOG_LOGIN=Token Login
+wxID_LOGIN_PIN_STATIC=Please input user PIN:
+
+;Dlg_UnblockToken
+ID_DIALOG_UNLOCKTOKEN=Unblock Token
+wxID_UNLOCK_SP_STATIC=Please input SO PIN:
+wxID_UNLOCK_NEW_UP_STATIC=Input new user PIN(%d to %d characters):
+wxID_UNLOCK_RE_UP_STATIC=Confirm new user PIN:
+
+;Dlg_ViewValue
+ID_DIALOG_VIEWVALUE=View Data
+
+;======================
+;MainMenu
+;======================
+128=&File
+129=&View
+130=&Operation
+131=&Help
+
+57664=&About EnterSafe PKI Manager...
+57665=E&xit
+32789=&Slot Info
+32790=Hide &Empty Slots
+
+32771=&Login
+32772=Change Token &Name
+32773=Change User &PIN
+32774=&Change SO PIN
+32775=&Unblock Token
+32776=&Initialize Token
+
+;SlotInfoPanel
+wxID_SLOT_STATIC=Slot detailed information:
+
+;SlotsInfoPanel
+wxID_SLOTS_STATIC=Slots Information:
+
+;TokenInfoPanel
+wxID_TOKEN_SLOT_STATIC=Slot detailed information:
+wxID_TOKEN_STATIC=Token detailed information:
+wxID_STATIC_USER=User Purview:
+ID_BUTTON_LOGIN=&Login
+ID_BUTTON_CHANGEUSERPIN=Change User &PIN
+ID_BUTTON_CHANGETOKENNAME=Change Token &Name
+
+wxID_STATIC_SO=Secure Officer Purview:
+ID_BUTTON_CHANGESOPIN=&Change SO PIN
+ID_BUTTON_UNLOCKTOKEN=&Unblock Token
+ID_BUTTON_INITTOKEN=&Initialize Token
+
+;Dlg_SetLoginTimer
+ID_DIALOG_SETLOGINTIMER=Set Login Timer
+ID_CHECKBOX_SET_TIMEOUT=Set login timeout
+wxID_STATIC_SET_LOGIN_TIMER=Set login timeout:
+wxID_STATIC_TIMER_UNIT=(1--36000 SEC)
+
+;Dlg_SelectLanguage
+ID_DIALOG_SELECT_LANGUAGE=Select Language
+wxID_STATIC_SELECT_LANGUAGE=Select language:
+
+5035=Login is timeout!
+5036=Not find language file!
+5037=Set login timeout error!
+5038=Not find language listed files!
+5039=Select language successfully!\nYour change will become effective only after you restart pkimanager
+
+32777=Set Login &Timer
+
+57666=&Select Language
+
+///new
+10130=Certificate
+10131=PublicKey
+10132=PrivateKey
+10133=Data
+10134=Field
+10135=Type
+10136=Value
+

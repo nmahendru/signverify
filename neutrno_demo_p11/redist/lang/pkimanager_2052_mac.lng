@@ -1,0 +1,370 @@
+
+[settings]
+; 2052 = 0x0804
+CodePage=2052
+Language=SimpleChinese (简体中文)
+FontFace=宋体
+FontHeight=9
+
+[strings]
+
+;==============================================================
+; Common strings
+;==============================================================
+;wxID_OK=OK
+wxID_OK=确定
+;wxID_CANCEL=Cancel
+wxID_CANCEL=取消
+
+;133=EnterSafe PKI Manager(User)
+133=EnterSafe PKI 管理工具(用户)
+;134=EnterSafe PKI Manager(Admin)
+134=EnterSafe PKI 管理工具(管理员)
+
+;801=Token is blocked by User PIN.
+801=您的用户PIN码被锁定了!
+;802=The PIN is too long
+802=您的用户PIN码长度超出规定范围!
+;803=Wrong PIN!\n\n The token is blocked.
+803=您输入错误的用户PIN码\n\n您的用户PIN码被锁定了!
+;804=Wrong PIN\n\nThis is the LAST PIN attempt, if the PIN is still wrong, the token will be blocked.
+804=您输入了错误的用户PIN码\n\n您还有最后一次机会输入您的用户PIN码,假如再次输入错误，您的令牌将被锁住!
+;805=Wrong PIN.
+805=您输入错误的用户PIN码!
+;814=Change User PIN successfully!
+814=修改用户PIN码成功!
+;821=Invalid token name!
+821=无效的令牌名!
+;822=Change Toekn name failed!
+822=修改令牌名失败!
+;823=Change token name successfully!
+823=修改令牌名成功!
+;833=Change SO PIN failed!
+833=修改管理员PIN码错误!
+;834=Change SO PIN successfully!
+834=修改管理员PIN码成功!
+;835=Token is blocked by SO PIN!
+835=您的管理员PIN码被锁定了!
+;836=SO PIN is too long!
+836=您的管理员PIN码长度超出规定范围!
+;837=Wrong SO PIN\n\nYour token is blocked by SO PIN!
+837=您输入错误的管理员PIN码\n\n您的管理员PIN码被锁定了!
+;838=Wrong SO PIN\n\n This is the LAST SO PIN attempt, if the PIN is still wrong, the token will be blocked.
+838=您输入了错误的管理员PIN码\n\n您还有最后一次机会输入您的管理员PIN码,假如再次输入错误，您的令牌将被锁住!
+;839=Wrong SO PIN!
+839=您输入错误的管理员PIN码!
+;843=Unblock token failed!
+843=令牌解锁失败!
+;844=Unblock token successfully!
+844=令牌解锁成功!
+;854=Initialize token failed!
+854=初始化令牌失败!
+;855=Inistialize token successfully!
+855=初始化令牌成功!
+;871=Export certificate successfully!
+871=证书导出成功!
+;872=Create file failed!
+872=创建文件失败!
+;873=Select a path to export your certificate!
+873=选择导出证书路径
+;874=Select your certificate file!
+874=选择证书
+;1260=Are you sure to delete it?
+1260=信息被删除以后，将无法恢复，您确信要继续删除操作吗?
+;1261=Delete data successfully!
+1261=删除信息成功!
+;1262=Deleted date failed!
+1262=删除信息出错!
+
+;5015=Unkown error!
+5015=未知错误!
+;5020=Token is removed!
+5020=令牌被移除!
+;5025=Wrong password!
+5025=错误的密码!
+;5026=Not enough space!
+5026=令牌中没有足够的空间存储证书!
+;5027=File not found!
+5027=特定的文件不存在!
+;5030=Not supported certificate!
+5030=不支持的证书格式!
+;5031=Only support 1024-bit RSA key pair!
+5031=令牌仅仅支持%d-%d位的RSA密钥对!
+;5032=Not supported certificate!
+5032=令牌不支持这种格式的证书!
+;5033=The certificate already exists, continue?
+5033=令牌中存在相同的证书，是否继续保存？
+;5034=Invalid session handle due to other operation.
+5034=可能对令牌进行了其他操作导致Session句柄无效。
+
+;10100=Description
+10100=描述信息
+;10101=Card Status
+10101=卡片状态
+;10102=Manufacturer
+10102=制造商
+;10103=Token is inserted and ready to use
+10103=卡片已插入且可以使用
+;10104=Token is inserted but cannot be recognized
+10104=卡片已插入但不可识别
+;10105=<Card not found>
+10105=<没有卡片>
+;10106=<Card not recognized>
+10106=<卡片不可识别>
+;10107=Slot list
+10107=令牌插槽列表
+;10108=Data management
+10108=数据管理
+;10109=Flags
+10109=标志
+;10110=Hardware Version
+10110=硬件版本
+;10111=Firmware Version
+10111=固件版本
+;10112=Token Name
+10112=标签(令牌名)
+;10113=Model
+10113=型号
+;10114=Serial number
+10114=序列号
+;10115=Max session number
+10115=最大会话数
+;10117=Max R/W session number
+10117=最大读写会话数
+;10119=Max PIN Length
+10119=最大PIN长度
+;10120=Min PIN Length
+10120=最小PIN长度
+;10121=Public space
+10121=公共数据区总空间
+;10122=Free public space
+10122=公共数据区剩余空间
+;10123=Private space
+10123=秘密数据区总空间
+;10124=Free private space
+10124=秘密数据区剩余空间
+;10125=Hardware Version
+10125=硬件版本
+;10126=Firmware Version
+10126=固件版本
+;10127=Token Timer
+10127=令牌时间
+;10128=<No built-in timer>
+10128=<没有内置时钟>
+;10129=Card not recognized
+10129=卡片不可识别
+
+;Get slot error!
+
+;DataMgrPanel
+;wxID_CERT_STATIC=Your Certificates:
+wxID_CERT_STATIC=您的证书:
+;ID_BUTTON_IMPORT=Import
+ID_BUTTON_IMPORT=导入
+;ID_BUTTON_EXPORT=Export
+ID_BUTTON_EXPORT=导出
+;ID_BUTTON_VIEW=View
+ID_BUTTON_VIEW=显示
+;ID_BUTTON_DELETE=Delete
+ID_BUTTON_DELETE=删除
+
+;Dlg_About
+;ID_DIALOG_ABOUT=About EnterSafe PKI Manager
+ID_DIALOG_ABOUT=关于EnterSafe PKI 管理工具
+;wxID_ABOUT_V_STATIC=EnterSafe PKI Manager V1.0
+wxID_ABOUT_V_STATIC=EnterSafe PKI 管理工具 V1.0
+;wxID_ABOUT_P_STATIC=Develop:Feitain EnterSafe Team
+wxID_ABOUT_P_STATIC=开发者:EnterSafe开发组
+wxID__ABOUT_C_STATIC=版权所有 (C) 2012 EnterSafe
+
+;Dlg_ChangeSOPin
+;ID_DIALOG_CHANGESOPIN=Change Secure Officer PIN
+ID_DIALOG_CHANGESOPIN=修改管理员PIN码
+;wxID_CHSP_SP_STATIC=Please input SO PIN:
+wxID_CHSP_SP_STATIC=请输入旧管理员PIN码:
+;wxID_CHSP_NEW_STATIC=Input new SO PIN(%d to %d characters):
+wxID_CHSP_NEW_STATIC=请输入新的PIN码(%d 到 %d 字符):
+;wxID_CHSP_RE_STATIC=Confirm new SO PIN:
+wxID_CHSP_RE_STATIC=请确认新的PIN码：
+
+;Dlg_ChangeTokenName
+;ID_DIALOG_CHANGETOKENNAME=Change Token Name
+ID_DIALOG_CHANGETOKENNAME=修改令牌名
+;wxID_CHTN_CTN_STATIC=Current Token Name:
+wxID_CHTN_CTN_STATIC=当前令牌名:
+;wxID_STATIC_TOKENNAME=ePass 2000
+wxID_STATIC_TOKENNAME=ePass2000
+;wxID_CHTN_NEW_STATIC=Set New Token Name(Max to 32 characters):
+wxID_CHTN_NEW_STATIC=请输入令牌新名(最大32字符):
+
+;Dlg_ChangeUserPin
+;ID_DIALOG_CHANGEUSERPIN=Change User PIN
+ID_DIALOG_CHANGEUSERPIN=修改用户PIN码
+;wxID_CHUP_UP_STATIC=Please input user PIN:
+wxID_CHUP_UP_STATIC=请输入旧PIN码:
+;wxID_CHUP_NEW_STATIC=Input new user PIN(%d to %d characters):
+wxID_CHUP_NEW_STATIC=请输入新的PIN码(%d 到 %d 字符):
+;wxID_CHUP_RE_STATIC=Confirm new user PIN:
+wxID_CHUP_RE_STATIC=确认新的PIN码:
+
+;Dlg_ExportCert
+;ID_DIALOG_EXPORTCERT=Export Certificate
+ID_DIALOG_EXPORTCERT=导出证书
+;wxID_EXC_PATH_STATIC=Certificate Path:
+wxID_EXC_PATH_STATIC=证书路径:
+
+;Dlg_ImportCert
+;ID_DIALOG_IMPORTCERT=Import Certificate
+ID_DIALOG_IMPORTCERT=导入证书文件
+;wxID_IMC_PATH_STATIC=Certificate Path:
+wxID_IMC_PATH_STATIC=证书文件路径:
+;wxID_STATIC_PASSWORD=Certificate Password:
+wxID_STATIC_PASSWORD=证书访问密码:
+
+;Dlg_InitToken
+;ID_DIALOG_INITTOKEN=Init Token
+ID_DIALOG_INITTOKEN=初始化令牌
+;wxID_INIT_SP_STATIC=Please input SO PIN:
+wxID_INIT_SP_STATIC=请输入管理员PIN码:
+;wxID_INIT_NEW_UP_STATIC=Input new user PIN(2 to 1000 characters):
+wxID_INIT_NEW_UP_STATIC=设置用户PIN码(%d 到 %d 字符):
+;wxID_INIT_RE_UP_STATIC=Confirm new user PIN:
+wxID_INIT_RE_UP_STATIC=确认用户PIN码:
+;wxID_INIT_TN_STATIC=Set token name(Max to 32 characters):
+wxID_INIT_TN_STATIC=设置令牌名字(最大32字符):
+
+;Dlg_Login
+;ID_DIALOG_LOGIN=Token Login
+ID_DIALOG_LOGIN=登录
+;wxID_LOGIN_PIN_STATIC=Please input user PIN:
+wxID_LOGIN_PIN_STATIC=请输入您的用户PIN码:
+
+;Dlg_UnlockToken
+;ID_DIALOG_UNLOCKTOKEN=Unlock Token
+ID_DIALOG_UNLOCKTOKEN=令牌解锁
+;wxID_UNLOCK_SP_STATIC=Please input SO PIN:
+wxID_UNLOCK_SP_STATIC=请输入管理员PIN码:
+;wxID_UNLOCK_NEW_UP_STATIC=Input new user PIN(2 to 1000 characters):
+wxID_UNLOCK_NEW_UP_STATIC=设置用户PIN码(%d 到 %d 字符):
+;wxID_UNLOCK_RE_UP_STATIC=Confirm new user PIN:
+wxID_UNLOCK_RE_UP_STATIC=确认用户PIN码:
+
+;Dlg_ViewValue
+;ID_DIALOG_VIEWVALUE=View Data
+ID_DIALOG_VIEWVALUE=显示
+
+;======================
+;MainMenu
+;======================
+;128=&File
+128=文件
+;129=&View
+129=查看
+;130=&Operation
+130=令牌操作
+;131=&Help
+131=帮助
+
+;57664=&About EnterSafe PKI Manager...
+57664=关于 EnterSafe PKI 管理工具...
+;57665=E&xit
+57665=退出
+;32789=&Slot Info
+32789=查看令牌插槽列表
+;32790=Hide &Empty Slots
+32790=隐藏空的读卡器
+
+;32771=&Login
+32771=登录
+;32772=Change Token &Name
+32772=修改令牌名
+;32773=Change User &Pin
+32773=修改用户PIN码
+;32774=&Change SO PIN
+32774=修改管理员PIN码
+;32775=&Unlock Token
+32775=令牌解锁
+;32776=&Init Token
+32776=初始化令牌
+
+;SlotInfoPanel
+;wxID_SLOT_STATIC=Slot detailed infomation:
+wxID_SLOT_STATIC=令牌插槽详细信息:
+
+;SlotsInfoPanel
+;wxID_SLOTS_STATIC=Slots Infomation:
+wxID_SLOTS_STATIC=令牌插槽简要信息:
+
+;TokenInfoPanel
+;wxID_TOKEN_SLOT_STATIC=Slot detailed infomation:
+wxID_TOKEN_SLOT_STATIC=令牌插槽详细信息:
+;wxID_TOKEN_STATIC=Token detailed infomation:
+wxID_TOKEN_STATIC=令牌详细信息:
+;wxID_STATIC_USER=User Purview:
+wxID_STATIC_USER=用户权限:
+;ID_BUTTON_LOGIN=Login
+ID_BUTTON_LOGIN=登录
+;ID_BUTTON_CHANGEUSERPIN=Change User PIN
+ID_BUTTON_CHANGEUSERPIN=修改用户PIN
+;ID_BUTTON_CHANGETOKENNAME=Change Token Name
+ID_BUTTON_CHANGETOKENNAME=修改令牌名
+
+;wxID_STATIC_SO=Secure Officer Purview:
+wxID_STATIC_SO=管理员权限:
+;ID_BUTTON_CHANGESOPIN=Change SO PIN
+ID_BUTTON_CHANGESOPIN=修改管理员PIN
+;ID_BUTTON_UNLOCKTOKEN=Unlock Token
+ID_BUTTON_UNLOCKTOKEN=令牌解锁
+;ID_BUTTON_INITTOKEN=Initialize Token
+ID_BUTTON_INITTOKEN=初始化令牌
+
+;Dlg_SetLoginTimer
+;ID_DIALOG_SETLOGINTIMER=Set Login Timer
+ID_DIALOG_SETLOGINTIMER=设置定时器
+;ID_CHECKBOX_SET_TIMEOUT=Set login timeout
+ID_CHECKBOX_SET_TIMEOUT=设置超时时间
+;wxID_STATIC_SET_LOGIN_TIMER=Set login timeout:
+wxID_STATIC_SET_LOGIN_TIMER=超时时间
+;wxID_STATIC_TIMER_UNIT=(minutes)
+wxID_STATIC_TIMER_UNIT=(1--36000 秒)
+
+;Dlg_SelectLanguage
+;ID_DIALOG_SELECT_LANGUAGE=Select Language
+ID_DIALOG_SELECT_LANGUAGE=更改语言
+;wxID_STATIC_SELECT_LANGUAGE=Select language:
+wxID_STATIC_SELECT_LANGUAGE=更改语言:
+
+;5035=Login is timeout!
+5035=登录已经超时!
+;5036=Not find language file!
+5036=没找到语言文件!
+;5037=Set login timeou error!
+5037=设置超时失败!
+;5038=Not find language listed files!
+5038=没找到语言文件!
+;5039=Select language successful!\nYour change will become effective only after you restart pkimanager
+5039=更改语言成功!\n会在您重启管理工具后生效
+
+;32777=Set Login &Timer
+32777=设置超时
+
+;57666=&Select Language
+57666=更改语言
+
+///new
+;10130=Certificate
+10130=证书
+;10131=PublicKey
+10131=公钥
+;10132=PrivateKey
+10132=私钥
+;10133=Data
+10133=数据
+;10134=Field
+10134=项目
+;10135=Value
+10135=类型
+;10136=Type
+10136=内容
+
+
