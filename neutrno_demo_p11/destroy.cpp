@@ -35,8 +35,8 @@ int main(void )
 		return FALSE;
 	}
 	char  userInput[1024] = {0};
-	cout << "Enter the object label you want to destroy" <<endl;
-	cin >> userInput;
+	//cout << "Enter the object label you want to destroy" <<endl;
+	//cin >> userInput;
 
 	CK_ATTRIBUTE searchTemplate[] = {
 		{CKA_LABEL,		  userInput,    sizeof(userInput)},
@@ -55,7 +55,7 @@ int main(void )
 	rv = C_FindObjectsFinal(demo.m_hSession);
 	if(rv != CKR_OK)
 		cout << "C_FindObjectsFinal failed " << hex << setfill('0') << setw(10) << rv << endl ;
-	cout << "Destroying the object you requested" << endl;
+	cout << "Destroying all the objects on the usb token" << endl;
 	for (int  i = 0 ; i < searchResultCount ; i ++){
 	rv = C_DestroyObject(demo.m_hSession , searchResults[i]);
 	if (rv == CKR_OK){

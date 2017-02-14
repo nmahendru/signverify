@@ -10,7 +10,7 @@ using namespace std;
 int main(int argc, char ** argv )
 {
 	if (argc != 3){
-		cout << "Usage: pkcsdemo <key handle to use> <hash of the file to be signed>" << endl ;
+		cout << "Usage: pkcsdemo <key handle to use> <firmware_file>" << endl ;
 		exit(-1);
 	}
 	char * key_handle = argv[1];

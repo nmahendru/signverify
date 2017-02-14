@@ -1,5 +1,4 @@
 SHLIBS = redist/libcastle.so.1.0.0
-
 all: keypairgen sign destroy extractpub keyGenerate.cpp main.cpp destroy.cpp extractPub.cpp
 	echo ""
 keypairgen: keyGenerate.cpp PKCSDemo.cpp

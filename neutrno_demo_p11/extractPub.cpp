@@ -11,12 +11,12 @@ using namespace std;
 
 int main(int argc, char ** argv )
 {
-	if (argc != 3){
-		cout << "Usage: extractpub <key handle to use> <public key file name>" << endl ;
+	if (argc != 2){
+		cout << "Usage: extractpub <key handle to use>" << endl ;
 		exit(-1);
 	}
 	char * key_label = argv[1];
-	char * pubKeyFile = argv[2];
+	//char * pubKeyFile = argv[2];
 	CK_RV rv;
 
 
@@ -74,22 +74,29 @@ int main(int argc, char ** argv )
 		{CKA_PUBLIC_EXPONENT, exponent, exponent_length },
 	};
 	int save_index = -1;
+	char buffer_t[4096] ;
+	char * buffer = buffer_t ;
 	for (int i = 0 ; i < searchResultCount ; i++){
 			C_GetAttributeValue(demo.m_hSession, searchResults[i], template1 , 4);
 			cout << "label found which going through search results " << label << endl;
 			if(strcmp(label,privateKeyLabel) == 0){
+				FILE * output_file = fopen("modExponent" , "w");
 				cout << "modulus length " << template1[1].ulValueLen << "  exponent length " << template1[3].ulValueLen  << endl;
-				cout << "modulus " <<endl ;
+				//cout << "modulus " <<endl ;
+				int bytes_written = 0;
+				bytes_written = sprintf(buffer, "modulus=");
 				for (int j = 0 ; j < template1[1].ulValueLen ; j++)	{
-				 		printf("%02x",modulus[j]) ;
-						if((j+1)%10 == 0) cout << endl;
+				 		bytes_written += sprintf(buffer+bytes_written,"%02x",modulus[j]) ;
 				}
 				cout << endl ;
 				cout << "exponent " << endl;
+				bytes_written += sprintf(buffer+bytes_written,"#exponent=");
 				for (int j = 0 ; j < template1[3].ulValueLen ; j++){
-						printf("%02x",exponent[j]);
+						bytes_written += sprintf(buffer + bytes_written , "%02x",exponent[j]);
 						}
-				cout << endl ;
+				//cout << endl ;
+				fwrite(buffer, 1, bytes_written,output_file);
+				fclose(output_file);
 
 			}
 	 }
